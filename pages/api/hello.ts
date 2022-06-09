@@ -5,9 +5,12 @@ type Data = {
   name: string
 }
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
-) {
-  res.status(200).json({ name: 'John Doe' })
+interface Person {
+  [index: string]: string //se usa cuando no sabemos todas las propiedades q debe tener
+}
+
+export default function handler(req: NextApiRequest, res: NextApiResponse<Person>) {
+  const p1: Person = {name: '45', age: 'fg'}
+  
+  res.status(200).json(p1);
 }

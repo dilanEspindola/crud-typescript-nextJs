@@ -1,0 +1,19 @@
+.header {
+  padding: 20px;
+  background: rgb(26, 25, 25);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.li {
+  color: #fff;
+  font-size: 18;
+  text-decoration: none;
+}
+
+.li:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
